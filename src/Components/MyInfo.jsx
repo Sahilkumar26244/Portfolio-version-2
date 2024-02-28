@@ -10,29 +10,32 @@ function MyInfo() {
   return (
     <div>
         <Box p={"20px"}>
-            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={"20px"} pb={"45px"}>
+            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"}>
                 <Box display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
                     <Avatar size='2xl' name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
                 </Box>
                 <Box>
-                    <Text textAlign={{base:"center",lg:"left"}} textTransform={"uppercase"} fontWeight={900} fontSize={"1.5rem"} letterSpacing={"3px"} color={"#3c3b3b"}>sahil kumar</Text>
+                    <Text textAlign={{base:"center",lg:"left"}} textTransform={"uppercase"} fontWeight={900} fontSize={{lg:"1.5rem",xl:"2rem"}} letterSpacing={"3px"} color={"#3c3b3b"}  _hover={{
+                        textDecoration: "none",
+                        color: "rgb(46, 89, 186)",
+                    }} cursor={"pointer"}>sahil kumar</Text>
                 </Box>
                 <Box>
-                    <Text textAlign={{base:"center",lg:"left"}} textTransform={"uppercase"} textDecoration={"1px dotted underline"} color={"#646464"} fontSize={"12.8px"}>kumarsahil8981@gmail.com</Text>
+                    <Text textAlign={{base:"center",lg:"left"}} textTransform={"uppercase"} textDecoration={"1px dotted underline"} color={"#646464"} fontSize={{lg:"12.8px",xl:"14.8px"}}>kumarsahil8981@gmail.com</Text>
                 </Box>
             </Box>
-            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={"20px"} pb={"45px"} pt={"45px"}>
+            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
                 <Box>
-                    <Text textTransform={"uppercase"} fontSize={"0.8em"} color={"#3c3b3b"} fontWeight={800} letterSpacing={"0.25em"}>about</Text>
+                    <Text textTransform={"uppercase"} fontSize={{lg:"0.8em",xl:"1.0em"}} color={"#3c3b3b"} fontWeight={800} letterSpacing={"0.25em"}>about</Text>
                 </Box>
                 <Box>
-                    <Text fontSize={"0.8em"} color={"#646464"}>Hi, I'm Michael. I am a Stanford ICME graduate, YC Alumni, and the VP of Engineering at Smile Identity. Previously, I was the co-founder and CTO of Arthena, co-founder of Matroid, and worked at Planet and Facebook.</Text>
+                    <Text fontSize={{lg:"0.8em",xl:"1.0em"}} color={"#646464"}>Hi, I'm Michael. I am a Stanford ICME graduate, YC Alumni, and the VP of Engineering at Smile Identity. Previously, I was the co-founder and CTO of Arthena, co-founder of Matroid, and worked at Planet and Facebook.</Text>
                 </Box>
                 <Box display={"flex"}>
                     <Button color={"#3c3b3b"} bg={"#0000"} fontSize={"9.6px"} borderRadius={"0px"}  boxShadow={"inset 0 0 0 1px #a0a0a04d"} fontWeight={800} letterSpacing={"0.25em"} p={"0 2.5em"}>LEARN MORE</Button>
                 </Box>
             </Box>
-            <Box display={"flex"} flexDirection={"column"} gap={"20px"} pb={"45px"} pt={"45px"}>
+            <Box display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
                 <Flex gap={"20px"} alignItems={"center"}>
                     <Box>
                         <FaGithub style={{color:"#aaaaaa",cursor:"pointer"}}/>
