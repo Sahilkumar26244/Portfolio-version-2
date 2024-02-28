@@ -1,14 +1,10 @@
 import {
-    Badge,
     Box,
     Collapse,
-    Divider,
     Flex,
     Icon,
     IconButton,
-    Image,
     Popover,
-    PopoverContent,
     PopoverTrigger,
     Stack,
     Text,
@@ -23,7 +19,6 @@ import {
     ChevronRightIcon,
   } from "@chakra-ui/icons";
   import { Link } from "react-router-dom";
-  import { MdKeyboardArrowDown } from "react-icons/md";
   
   function Navbar() {
     const { isOpen, onToggle } = useDisclosure();
@@ -33,8 +28,8 @@ import {
         <Flex
           bg={"white"}
           
-          minH={"60px"}
-          py={{ base: "10px", lg: "0px" }}
+          minH={{base:"",lg:"60px"}}
+          py={{ base: "0px", lg: "0px" }}
           borderBottom={"1px solid #e2e2e2"}
           position="fixed" // Add sticky positioning
           top={"0"} // Stick to the top of the viewport
@@ -57,7 +52,10 @@ import {
                 h={"100%"}
                 p={"16px 25px 15px 25px"}
               >
-                <Text fontWeight={800} fontSize={{lg:"11px",xl:"13px"}} textTransform={"uppercase"} color={"#474646"} letterSpacing={"3px"}>Sahil Kumar</Text>
+                <Text _hover={{
+                    textDecoration: "none",
+                    color: "rgb(46, 89, 186)",
+                  }} fontWeight={800} fontSize={{lg:"11px",xl:"13px"}} textTransform={"uppercase"} color={"#474646"} letterSpacing={"3px"}>Sahil Kumar</Text>
               </Box>
             </Link>
   
