@@ -10,7 +10,7 @@ function MyInfo() {
   return (
     <div>
         <Box p={"20px"}>
-            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"}>
+            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{base:"20px",lg:"20px",xl:"40px"}} pb={"45px"}>
                 <Box display={"flex"} justifyContent={{base:"center",lg:"flex-start"}}>
                     <Avatar size='2xl' name='Segun Adebayo' src='https://bit.ly/sage-adebayo' />
                 </Box>
@@ -24,7 +24,7 @@ function MyInfo() {
                     <Text textAlign={{base:"center",lg:"left"}} textTransform={"uppercase"} textDecoration={"1px dotted underline"} color={"#646464"} fontSize={{lg:"12.8px",xl:"14.8px"}}>kumarsahil8981@gmail.com</Text>
                 </Box>
             </Box>
-            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
+            <Box borderBottom={"1px solid #e2e2e2"} display={"flex"} flexDirection={"column"} gap={{base:"20px",lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
                 <Box>
                     <Text textTransform={"uppercase"} fontSize={{lg:"0.8em",xl:"1.0em"}} color={"#3c3b3b"} fontWeight={800} letterSpacing={"0.25em"}>about</Text>
                 </Box>
