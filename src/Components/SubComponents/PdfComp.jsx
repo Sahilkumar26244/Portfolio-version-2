@@ -61,12 +61,12 @@ function PdfComp() {
             flexDirection={"column"}
             gap={"25px"}
             pt={"20px"}
-            pb={"20px"}
+           
           >
             {experience.map((e, i) => (
               <>
                 <Box display={"flex"} flexDirection={"column"} gap={"10px"}>
-                  <Box>
+                  <Box display={"flex"} flexDirection={"column"} gap={"5px"}>
                     <Flex
                       textTransform={"uppercase"}
                       fontSize={{base:"0.6em", lg: "0.7em", xl: "1.0em" }}
