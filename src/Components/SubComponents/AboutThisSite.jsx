@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 
 function AboutThisSite() {
@@ -14,7 +14,7 @@ function AboutThisSite() {
             </Box>
             <Box p={"50px"} display={"flex"} flexDirection={"column"} gap={"20px"}>
                 <Text lineHeight={"2"} color={"#646464"} fontSize={"15px"} fontWeight={400}>Welcome to my website. Please feel free to read more about me, or you can check out my resume, projects, view site statistics, or contact me.</Text>
-                <Text color={"#646464"} fontSize={"15px"} fontWeight={400}>Source available here.</Text>
+                <Text color={"#646464"} fontSize={"15px"} fontWeight={400}>Source available <Link href='https://github.com/Sahilkumar26244/Portfolio-version-2'>here</Link>.</Text>
             </Box>
         </Box>
     </div>

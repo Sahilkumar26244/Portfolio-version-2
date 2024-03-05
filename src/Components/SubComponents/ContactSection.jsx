@@ -17,7 +17,7 @@ function ContactSection() {
             <Box p={{base:"20px 30px",lg:"50px"}} display={"flex"} flexDirection={"column"} gap={"50px"}>
                 <Box>
                     <Text fontSize={"0.9em"} color={"#646464"}>Feel free to get in touch. You can email me at:</Text>
-                    <Text fontSize={"0.9em"} color={"#646464"}>kumarsahil8981@gmail.com</Text>
+                    <Text fontSize={"0.9em"} color={"#646464"} textDecoration={"1px dotted underline"}>kumarsahil8981@gmail.com</Text>
                 </Box>
                 <Box>
                     <ContactForm/>

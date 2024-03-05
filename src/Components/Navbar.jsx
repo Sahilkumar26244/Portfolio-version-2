@@ -189,11 +189,11 @@ import {
   const MobileNav = ({ y, opacity }) => {
     return (
       <Stack
-        boxShadow={"rgba(149, 157, 165, 0.2) 0px 8px 24px"}
+        boxShadow={"rgb(38, 57, 77) 0px 20px 30px -10px;"}
         bg={useColorModeValue("white", "gray.800")}
         p={4}
         display={{ md: "flex", xl: "none" }}
-        mt={{ base: "50px", md: "70px", lg: "110px" }}
+        mt={{ base: "60px", md: "60px", lg: "110px" }}
         position="fixed" // Add sticky positioning
         top={y} // Stick to the top of the viewport
         zIndex="1000"
@@ -216,7 +216,7 @@ import {
         <Box
           pl={{ lg: 10 }}
           py={2}
-          as="a"
+          
           justifyContent="space-between"
           alignItems="center"
           _hover={{
@@ -224,25 +224,16 @@ import {
           }}
         >
           <Flex gap={"10px"} alignItems={"center"}>
-            <Link to={href}>
+            <a as="a"
+            href={href ?? '#'}>
               <Text
-                fontSize={{ lg: "30px" }}
-                fontWeight={600}
-                color={useColorModeValue("gray.600", "gray.200")}
+              textTransform={"uppercase"} fontSize={{base:"0.8em",lg:"0.8em",xl:"1.0em"}} color={"#3c3b3b"} fontWeight={500} letterSpacing={"0.25em"}
               >
                 {label}
               </Text>
-            </Link>
+            </a>
   
-            {children && (
-              <Icon
-                as={ChevronDownIcon}
-                transition={"all .25s ease-in-out"}
-                transform={isOpen ? "rotate(180deg)" : ""}
-                w={6}
-                h={6}
-              />
-            )}
+          
           </Flex>
         </Box>
   
