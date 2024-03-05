@@ -1,9 +1,5 @@
-import { useState } from "react";
-import { Document, Page } from "react-pdf";
-import MyResume from "../../assets/Sahil_Kumar_Resume.pdf";
 import {
   Box,
-  Divider,
   Flex,
   ListItem,
   Text,

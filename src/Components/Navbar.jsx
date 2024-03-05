@@ -2,7 +2,6 @@ import {
     Box,
     Collapse,
     Flex,
-    Icon,
     IconButton,
     Popover,
     PopoverTrigger,
@@ -15,8 +14,6 @@ import {
   import {
     HamburgerIcon,
     CloseIcon,
-    ChevronDownIcon,
-    ChevronRightIcon,
   } from "@chakra-ui/icons";
   import { Link } from "react-router-dom";
   
@@ -143,48 +140,48 @@ import {
     );
   };
   
-  const DesktopSubNav = ({ label, href, subLabel }) => {
-    return (
-      <Box
-        as="a"
-        href={href}
-        role={"group"}
-        display={"block"}
-        p={2}
-        rounded={"md"}
-        _hover={{ bg: useColorModeValue("#8bc53f", "gray.900") }}
-      >
-        <Stack
-          direction={"row"}
-          align={"center"}
-          _hover={{
-            textDecoration: "none",
-            color: "white",
-          }}
-        >
-          <Box>
-            <Link to={href}>
-              <Text transition={"all .3s ease"} fontWeight={500}>
-                {label}
-              </Text>
-            </Link>
-            <Text fontSize={"sm"}>{subLabel}</Text>
-          </Box>
-          <Flex
-            transition={"all .3s ease"}
-            transform={"translateX(-10px)"}
-            opacity={0}
-            _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-            justify={"flex-end"}
-            align={"center"}
-            flex={1}
-          >
-            <Icon color={"white"} w={5} h={5} as={ChevronRightIcon} />
-          </Flex>
-        </Stack>
-      </Box>
-    );
-  };
+  // const DesktopSubNav = ({ label, href, subLabel }) => {
+  //   return (
+  //     <Box
+  //       as="a"
+  //       href={href}
+  //       role={"group"}
+  //       display={"block"}
+  //       p={2}
+  //       rounded={"md"}
+  //       _hover={{ bg: useColorModeValue("#8bc53f", "gray.900") }}
+  //     >
+  //       <Stack
+  //         direction={"row"}
+  //         align={"center"}
+  //         _hover={{
+  //           textDecoration: "none",
+  //           color: "white",
+  //         }}
+  //       >
+  //         <Box>
+  //           <Link to={href}>
+  //             <Text transition={"all .3s ease"} fontWeight={500}>
+  //               {label}
+  //             </Text>
+  //           </Link>
+  //           <Text fontSize={"sm"}>{subLabel}</Text>
+  //         </Box>
+  //         <Flex
+  //           transition={"all .3s ease"}
+  //           transform={"translateX(-10px)"}
+  //           opacity={0}
+  //           _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
+  //           justify={"flex-end"}
+  //           align={"center"}
+  //           flex={1}
+  //         >
+  //           <Icon color={"white"} w={5} h={5} as={ChevronRightIcon} />
+  //         </Flex>
+  //       </Stack>
+  //     </Box>
+  //   );
+  // };
   
   const MobileNav = ({ y, opacity }) => {
     return (
@@ -270,6 +267,10 @@ import {
     {
       label: "ABOUT",
       href:"/about"
+    },
+    {
+      label: "SKILLS",
+      href:"/skills"
     },
     {
       label: "RESUME",
