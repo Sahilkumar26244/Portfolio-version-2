@@ -35,7 +35,7 @@ function MyInfo() {
                     <Button color={"#3c3b3b"} bg={"#0000"} fontSize={"9.6px"} borderRadius={"0px"}  boxShadow={"inset 0 0 0 1px #a0a0a04d"} fontWeight={800} letterSpacing={"0.25em"} p={"0 2.5em"}>LEARN MORE</Button>
                 </Box>
             </Box>
-            <Box display={"flex"} flexDirection={"column"} gap={{lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
+            <Box display={"flex"} flexDirection={"column"} gap={{base:"20px",lg:"20px",xl:"40px"}} pb={"45px"} pt={"45px"}>
                 <Flex gap={"20px"} alignItems={"center"}>
                     <Box>
                         <FaGithub style={{color:"#aaaaaa",cursor:"pointer"}}/>
