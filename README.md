@@ -1,6 +1,6 @@
 # Resume Portfolio Project
 
-![Portfolio Banner]![Screenshot 2025-05-08 173312](https://github.com/user-attachments/assets/531475c4-3bbe-46c7-a82b-00d216ada9d7)
+![Screenshot 2025-05-08 173312](https://github.com/user-attachments/assets/531475c4-3bbe-46c7-a82b-00d216ada9d7)
 
 
 ## 🌟 Live Demo
